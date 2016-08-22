@@ -1,0 +1,34 @@
+.rad {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.rad > input { /* HIDE ORG RADIO & CHECKBOX */
+  visibility: hidden;
+  position: absolute;
+}
+
+/* RADIO & CHECKBOX STYLES */
+.rad > i,
+.ckb > i{     /* DEFAULT <i> STYLE */
+  display: inline-block;
+  vertical-align: middle;
+  width:  22px;
+  height: 22px;
+  border-radius: 50%;
+  transition: 0.2s;
+  border: 1px solid #f7b401;
+  background-color: white;
+}
+
+.rad > input:checked + i{ /* (RADIO CHECKED) <i> STYLE */
+  border: 7px solid #f7b401;
+  border-color: orange;
+}
+
+.ckb > input:checked + i:after{ /* (RADIO CHECKED) <i> STYLE */
+  margin-left: 11px;
+  background:  orange;
+}

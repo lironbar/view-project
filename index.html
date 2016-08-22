@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML Task</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="rad.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <div class="row">
+            <header>
+                <div class="col-sm-10">
+                    <img src="data/images/ofran.png" alt="View">
+                </div>
+                <div class="col-sm-2 text-right">
+                    <span>Hello, Tal</span>
+                </div>
+            </header>
+        </div>
+        <!--booking and price-->
+        <div id="bookingText" class="row">
+            <div class="col-lg-12">
+                <h4 class="title">BOOKING AND PRICE QUOTES</h4>
+                <p>
+                    Below are the details of your furute active bookings and your valid price quotes. <br>
+                    Please note that international one way rentals/price quotes, and out of operational houres rentals/price quotes, will not appear in this list. <br>
+                    Ror these, please call our call center at 03-7951010.
+                </p>
+            </div>
+        </div>
+        <!--create new booking-->
+        <div id="createbooking" class="row">
+            <div class="col-xs-12 text-right">
+                <button>Create New Booking</button>
+            </div>
+        </div>
+        <!--find reservation-->
+        <div id="reservationWrapper" class="marginTop">
+            <div id="reservationHeader" class="row">
+                <div class="col-sm-12 text-center">
+                    <h4>Find reservation by:</h4>
+                </div>
+            </div>
+            <div id="reservations" class="row">
+                <div class="col-sm-12 text-center">
+                    <ul>
+                        <li>
+                            <label class="rad">
+                                <input type="radio" name="reservationFilter" value="a" />
+                                <i></i> Order Number
+                            </label>
+                        </li>
+                        <li>
+                            <label class="rad">
+                                <input type="radio" name="reservationFilter" value="b" />
+                                <i></i> Client Name
+                            </label>
+                        </li>
+                        <li>
+                            <label class="rad">
+                                <input type="radio" name="reservationFilter" value="b" />
+                                <i></i> Pick Up Date
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="searchReservations" class="text-center">
+                <div>
+                    <input type="text" class="form-control">
+                    <img src="data/images/searchicon.png" alt="Search">
+                </div>
+            </div>
+        </div>
+        <!--futrue active booking-->
+        <div id="futureBooking" class="row">
+            <div class="col-sm-12">
+                <h4 class="title marginTop">FUTURE ACTIVE BOOKINGS</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="center-table tableBorderRadius tableIcon tableLayout">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Booking Number
+                                </th>
+                                <th>
+                                    Driver's Name
+                                </th>
+                                <th>
+                                    Pick Up Country
+                                </th>
+                                <th>
+                                    Pick Up Station
+                                </th>
+                                <th>
+                                    Pick Up Date
+                                </th>
+                                <th>
+                                    Days
+                                </th>
+                                <th>
+                                    Sliip Code
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                                <th colspan="2">
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>34643562</td>
+                                <td>Hil Gal/Mrs</td>
+                                <td>Germany</td>
+                                <td>Frankfurt Airport - Terminal 1</td>
+                                <td>26/05/15</td>
+                                <td>3</td>
+                                <td>CCMV</td>
+                                <td>On request</td>
+                                <td>
+                                    <a>
+                                        <img src="data/images/glasses.png" alt="View">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <img src="data/images/x.png" alt="Delete">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>34643562</td>
+                                <td>Hil Gal/Mrs</td>
+                                <td>Germany</td>
+                                <td>Frankfurt Airport - Terminal 1</td>
+                                <td>26/05/15</td>
+                                <td>3</td>
+                                <td>CCMV</td>
+                                <td>On request</td>
+                                <td>
+                                    <a>
+                                        <img src="data/images/glasses.png" alt="View">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a>
+                                        <img src="data/images/x.png" alt="Delete">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--valid price qutoes-->
+        <div id="priceQutoes" class="row">
+            <div class="col-sm-12">
+                <h4 class="title marginTop">VALID PRICE QUTOES</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="center-table tableBorderRadius tableIcon tableLayout">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Booking Number
+                                </th>
+                                <th>
+                                    Driver's Name
+                                </th>
+                                <th>
+                                    Pick Up Country
+                                </th>
+                                <th>
+                                    Pick Up Station
+                                </th>
+                                <th>
+                                    Pick Up Date
+                                </th>
+                                <th>
+                                    Days
+                                </th>
+                                <th>
+                                    Sliip Code
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                                <th>
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>34643562</td>
+                                <td>Hil Gal/Mrs</td>
+                                <td>Germany</td>
+                                <td>Frankfurt Airport - Terminal 1</td>
+                                <td>26/05/15</td>
+                                <td>3</td>
+                                <td>CCMV</td>
+                                <td>On request</td>
+                                <td>
+                                    <a>
+                                        <img src="data/images/v.png" alt="OK">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--subscribe for special-->
+        <div id="subscribe" class="row marginTop">
+            <div class="col-lg-4 text-right">
+                <label for="subscribe_email" class="control-label">Subscribe for special offers</label>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <input type="email" id="subscribe_email" class="form-control" placeholder="Enter your email address here">
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+        <!--car rental-->
+        <div id="carRental" class="row">
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+                <ul>
+                    <li>Car rental in USA <img src="data/images/droparrow.png" /></li>
+                    <li>Car rental in California</li>
+                    <li>Car rental in Florida</li>
+                    <li>Car rental in New York</li>
+                    <li>Car rental in Los Angeles</li>
+                    <li>Car rental in Miami</li>
+                    <li>Car rental in Orlando</li>
+                    <li>Car rental in Las Vegas</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+                <ul>
+                    <li>Car rental in USA <img src="data/images/droparrow.png" /></li>
+                    <li>Car rental in California</li>
+                    <li>Car rental in Florida</li>
+                    <li>Car rental in New York</li>
+                    <li>Car rental in Los Angeles</li>
+                    <li>Car rental in Miami</li>
+                    <li>Car rental in Orlando</li>
+                    <li>Car rental in Las Vegas</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+                <ul>
+                    <li>Car rental in USA <img src="data/images/droparrow.png" /></li>
+                    <li>Car rental in California</li>
+                    <li>Car rental in Florida</li>
+                    <li>Car rental in New York</li>
+                    <li>Car rental in Los Angeles</li>
+                    <li>Car rental in Miami</li>
+                    <li>Car rental in Orlando</li>
+                    <li>Car rental in Las Vegas</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-xs-12">
+                <ul>
+                    <li>Car rental in USA <img src="data/images/droparrow.png" /></li>
+                    <li>Car rental in California</li>
+                    <li>Car rental in Florida</li>
+                    <li>Car rental in New York</li>
+                    <li>Car rental in Los Angeles</li>
+                    <li>Car rental in Miami</li>
+                    <li>Car rental in Orlando</li>
+                    <li>Car rental in Las Vegas</li>
+                </ul>
+            </div>
+        </div>
+        <!--world wide-->
+        <div id="worldwide" class="row">
+            <div class="col-xs-12 text-center">
+                <span>Worldwide websites:</span>
+                <img src="data/images/russia.png" alt="Russia">
+                <img src="data/images/czechrepublic.png" alt="Czech republic">
+                <img src="data/images/hungary.png" alt="Hungary">
+                <img src="data/images/romania.png" alt="Romania">
+                <img src="data/images/slovenia.png" alt="Slovenia">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
